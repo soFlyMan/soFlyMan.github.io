@@ -10,9 +10,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Welcome to Hux Blog - 你的博客 | Your Blog</title>
+    <title>My First Blog - 你的博客 | Your Blog</title>
 
-    <link rel="canonical" href="http://huangxuan.me/2015/01/29/hello-2015/">
+    <link rel="canonical" href="http://huangxuan.me/2015/01/29/my-first-blog/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -140,13 +140,13 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#生活" title="生活">生活</a>
+                        <a class="tag" href="/tags/#life" title="life">life</a>
                         
                     </div>
-                    <h1>Welcome to Hux Blog</h1>
+                    <h1>My First Blog</h1>
                     
                     
-                    <h2 class="subheading"> "Hello World, Hello Blog"</h2>
+                    <h2 class="subheading"> "DEAD END"</h2>
                     
                     <span class="meta">Posted by Hux on January 29, 2015</span>
                 </div>
@@ -167,12 +167,14 @@
                 post-container">
 
 				<blockquote>
-  <p>“Yeah It’s on. ”</p>
+  <p>“ 感性者的理性思维之路. ”</p>
 </blockquote>
 
 <h2 id="section">前言</h2>
 
-<p>Hux 的 Blog 就这么开通了。</p>
+<p>搭建我的第一个博客对我而言只是一个开始。
+因为很长一段时间都觉得自己一片空白。所以希望自己可以通过这样一种方式给自己开个头。
+确实，Github Pages+jekyll的方式搭建blog的过程很容易，但还是遇到了不少的问题。</p>
 
 <p><a href="#build">跳过废话，直接看技术实现 </a></p>
 
@@ -206,7 +208,7 @@
 
 <p>本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy) 迁移了一个<a href="http://huxpro.gitcafe.io">镜像</a>出来，结果还是巨慢。</p>
 
-<p>哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 <strong>pending 在了 Google Fonts</strong> 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。<br />
+<p>哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 <strong>pending 在了 Google Fonts</strong> 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。
 忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。</p>
 
 <hr />
@@ -241,21 +243,18 @@
                 </style>
                 <div class="ds-share"
                     style="text-align: right"
-                    data-thread-key="/2015/01/29/hello-2015"
-                    data-title="Welcome to Hux Blog"
-                    data-url="http://huangxuan.me/2015/01/29/hello-2015/"
+                    data-thread-key="/2015/01/29/my first blog"
+                    data-title="My First Blog"
+                    data-url="http://huangxuan.me/2015/01/29/my-first-blog/"
                     data-images="http://huangxuan.me/img/post-bg-2015.jpg"
                     data-content="
-  “Yeah It’s on. ”
+  “ 感性者的理性思维之路. ”
 
 
 前言
 
-Hux 的 Blog 就这么开通了。
-
-跳过废话，直接看技术实现 
-
-2015 年，Hux 总算有个地... | 你的博客 | Your Blog " >
+搭建我的第一个博客对我而言只是一个开始。
+因为很长一段时间都觉得自己一片空白。所以希望自己可以通过这样一... | 你的博客 | Your Blog " >
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
                         <li data-toggle="ds-share-icons-more"><a class="ds-more" href="#">分享到：</a></li>
@@ -274,6 +273,10 @@ Hux 的 Blog 就这么开通了。
 
                 <ul class="pager">
                     
+                    <li class="previous">
+                        <a href="/2015/01/29/hello-2015/" data-toggle="tooltip" data-placement="top" title="Welcome to Hux Blog">&larr; Previous Post</a>
+                    </li>
+                    
                     
                     <li class="next">
                         <a href="/2015/04/14/unix-linux-note/" data-toggle="tooltip" data-placement="top" title="Example Post">Next Post &rarr;</a>
@@ -286,9 +289,9 @@ Hux 的 Blog 就这么开通了。
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                        data-thread-key="/2015/01/29/hello-2015"
-                        data-title="Welcome to Hux Blog"
-                        data-url="http://huangxuan.me/2015/01/29/hello-2015/" >
+                        data-thread-key="/2015/01/29/my first blog"
+                        data-title="My First Blog"
+                        data-url="http://huangxuan.me/2015/01/29/my-first-blog/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -312,9 +315,7 @@ Hux 的 Blog 就这么开通了。
                     <div class="tags">
         				
                             
-                				<a href="/tags/#生活" title="生活" rel="2">
-                                    生活
-                                </a>
+        				
                             
         				
                             
@@ -437,7 +438,7 @@ Hux 的 Blog 就这么开通了。
                     <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
                     
                     <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/https://www.zhihu.com/people/soFlyMan">
+                        <a target="_blank" href="https://www.zhihu.com/people/https://github.com/soFlyMan">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa  fa-stack-1x fa-inverse">知</i>
@@ -447,7 +448,7 @@ Hux 的 Blog 就这么开通了。
                     
                     
                     <li>
-                        <a target="_blank" href="http://weibo.com/http://weibo.com/soFlyMan">
+                        <a target="_blank" href="http://weibo.com/https://github.com/soFlyMan">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
