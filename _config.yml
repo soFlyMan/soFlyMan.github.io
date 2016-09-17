@@ -1,11 +1,11 @@
 # Site settings
 title: soFly's Blog
-SEOTitle: 你的博客 | Your Blog
+SEOTitle: soFly's Blog
 header-img: img/open_photo_temp1.jpg
 email: 1351370237@qq.com
 description: "这是我的博客。"
 keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
+url: "http://soflyman.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
