@@ -12,3 +12,5 @@
 [Github前端项目排名(2016-04-04)](http://www.cnblogs.com/think90/p/5737016.html)
 
 [帮助程序员编程时集中注意力的最佳音乐收集](http://www.techug.com/best-music-to-listen-while-programming-to-aid-concentration)
+
+[找程序员的工作，你真的准备好了吗？！](https://zhuanlan.zhihu.com/p/22522537)
