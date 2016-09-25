@@ -1,0 +1,27 @@
+---
+layout:     post
+title:      "tips"
+subtitle:   "需要get的技能点！"
+date:       2016-09-22
+author:     "soFly"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - tips
+   
+---
+### 关于写代码时遇到的小tips
+
+> FONT SHORTHAND
+
+**font syntax语法**
+
+body {
+
+  font: font-style font-variant font-weight font-size/line-height font-family;
+
+}
+
+You need to supply at least font-size and font-family for the shorthand to work, otherwise it'll just be a syntax error and do nothing.
+
+你需要提供至少字体大小和字体，否则将会出现语法错误，导致invalid property value。
+

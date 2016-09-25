@@ -5,9 +5,56 @@
     <description>这是我的博客。</description>
     <link>http://soflyman.github.io/</link>
     <atom:link href="http://soflyman.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 17 Sep 2016 22:12:15 +0800</pubDate>
-    <lastBuildDate>Sat, 17 Sep 2016 22:12:15 +0800</lastBuildDate>
+    <pubDate>Thu, 22 Sep 2016 10:05:35 +0800</pubDate>
+    <lastBuildDate>Thu, 22 Sep 2016 10:05:35 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>tips</title>
+        <description>&lt;h3 id=&quot;tips&quot;&gt;关于写代码时遇到的小tips&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;FONT SHORTHAND&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;font syntax语法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;body {&lt;/p&gt;
+
+&lt;p&gt;font: font-style font-variant font-weight font-size/line-height font-family;&lt;/p&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;You need to supply at least font-size and font-family for the shorthand to work, otherwise it’ll just be a syntax error and do nothing.&lt;/p&gt;
+
+&lt;p&gt;你需要提供至少字体大小和字体，否则将会出现语法错误，导致invalid property value。&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 22 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/22/tips/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/22/tips/</guid>
+        
+        <category>tips</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>名词解释</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;一些名词的解释及作用&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;模版引擎&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;模板引擎（这里特指用于Web开发的模板引擎）是为了使用户界面与业务数据（内容）分离而产生的，它可以生成特定格式的文档，用于网站的模板引擎就会生成一个标准的HTML文档。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/22/defination/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/22/defination/</guid>
+        
+        <category>tips</category>
+        
+        
+      </item>
     
       <item>
         <title>目标</title>
