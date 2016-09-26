@@ -25,3 +25,50 @@ You need to supply at least font-size and font-family for the shorthand to work,
 
 你需要提供至少字体大小和字体，否则将会出现语法错误，导致invalid property value。
 
+
+
+#### 如何给文件夹或者文件添加右键sublime打开选项
+
+把以下代码，复制到SublimeText3的安装目录，然后重命名为：sublime_addright.reg，然后双击就可以了。
+
+PS:**需要把里边的Sublime的安装目录，替换成实际的Sublime安装目录**。
+
+```
+PS:需要把里边的Sublime的安装目录，替换成实际的Sublime安装目录。
+
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3]
+@="用 SublimeText3 打开"
+"Icon"="C:\\Program Files\\Sublime Text 3\\sublime_text.exe,0"
+
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3\command]
+@="C:\\Program Files\\Sublime Text 3\\sublime_text.exe %1"
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
+@="用 SublimeText3 打开"
+"Icon"="C:\\Program Files\\Sublime Text 3\\sublime_text.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3\command]
+@="C:\\Program Files\\Sublime Text 3\\sublime_text.exe %1"
+
+```
+
+**删除右键菜单的脚本**,然后重命名为：sublime_delright.reg，运行一下就可以了。
+```
+Windows Registry Editor Version 5.00
+[-HKEY_CLASSES_ROOT\*\shell\SublimeText3]
+[-HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
+
+```
+
+
+
+
+### 有哪些好的习惯程序员值得拥有？  
+
+
+
+>1.使用快捷键。
+2.写博客。
+3.写脚本替换重复操作。

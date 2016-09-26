@@ -198,7 +198,7 @@
 
 <p>确实，Github Pages+jekyll的方式搭建blog的过程很容易，但还是遇到了不少的问题。</p>
 
-<p>我也是最近不久才接触Github的（说起来也真是惭愧……）。首先 我被这全英文的界面惊呆了好么。看着这些英文，我的大脑像装了浆糊一样。大学三年，英语已经荒废的不成样子，每次考试都是裸考，包括四六级。第一次裸考四级过了之后，其实当时我的想法是直接放弃六级的。只能说，以前的我脑子里装的全是水……（才意识到，自己在这里写字卡的不成样子。我完全可以在其他的文本里写完再粘贴过来嘛。你说我是不是傻……）
+<p>我也是最近不久才接触Github的（说起来也真是惭愧……）。首先 我被这全英文的界面惊呆了好么。看着这些英文，我的大脑像装了浆糊一样。大学三年，英语已经荒废的不成样子，每次考试都是裸考，包括四六级。第一次裸考四级过了之后，其实当时我的想法是直接放弃六级的。只能说，以前的我脑子里装的全是水……
 接触Github还不到一个月，现在我才发现Github很强大，而且有很多很多好玩的东西。只是我现在的知识面太浅，很多东西都似懂非懂的样子。目前我的想法是靠自学
 成为一名前端。（好吧，其实也开始不久……）
 其实大一的时候还是接触过一点点的，只是当时就放弃了。想起来，我放弃的东西还真是多……所有，才会觉得自己变的一片空白。空白也好，空白的一张纸就更容易写上自己想写的
@@ -210,41 +210,6 @@
 虽然我到现在还不知道具体是什么原因……</p>
 
 <p>然后，就不知羞耻的clon了别人的<a href="https://github.com/Huxpro/huxpro.github.io">模板</a>，因为我的想法是可以在以后有进步的时候再来不断的修改，最后完全变成自己喜欢的样子！</p>
-
-<p>//以下为原作者的内容
-正好之前就有关注过 <a href="https://pages.github.com/">GitHub Pages</a> + <a href="http://jekyllrb.com/">Jekyll</a> 快速 Building Blog 的技术方案，非常轻松时尚。</p>
-
-<p>其优点非常明显：</p>
-
-<ul>
-  <li><strong>Markdown</strong> 带来的优雅写作体验</li>
-  <li>非常熟悉的 Git workflow ，<strong>Git Commit 即 Blog Post</strong></li>
-  <li>利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
-    <ul>
-      <li>如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了</li>
-    </ul>
-  </li>
-  <li>Jekyll 的自定制非常容易，基本就是个模版引擎</li>
-</ul>
-
-<p>本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy) 迁移了一个<a href="http://huxpro.gitcafe.io">镜像</a>出来，结果还是巨慢。</p>
-
-<p>哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 <strong>pending 在了 Google Fonts</strong> 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。
-忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。</p>
-
-<hr />
-
-<p>配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手</p>
-
-<p>大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是我给它补上了。）</p>
-
-<p>本地调试环境需要 <code class="highlighter-rouge">gem install jekyll</code>，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功</p>
-
-<p>Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了（平时更习惯 SCSS 些），<strong>不过其实我一直觉得 Bootstrap 在移动端的体验做得相当一般，比我在淘宝参与的团队 CSS 框架差多了……</strong>所以为了体验，也补了不少 CSS 进去</p>
-
-<p>最后就进入了耗时反而最长的<strong>做图、写字</strong>阶段，也算是进入了<strong>写博客</strong>的正轨，因为是类似 Hack Day 的方式去搭这个站的，所以折腾折腾着大半夜就过去了。</p>
-
-<p>第二天考虑中文字体的渲染，fork 了 <a href="http://www.typeisbeautiful.com/">Type is Beautiful</a> 的 <code class="highlighter-rouge">font</code> CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。</p>
 
 <h2 id="section-2">后记</h2>
 <p>关于这个blog的问题，我觉得它会成为我成长的记录本。现在的我是一个小白，不代表以后的我依旧是。路很艰难，很多东西说起来容易，做起来难，这些都是
@@ -291,10 +256,6 @@
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2015/09/22/js-version/" data-toggle="tooltip" data-placement="top" title="Example Post">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
                         <a href="/2016/09/13/fanhuasanqian/" data-toggle="tooltip" data-placement="top" title="繁花三千">Next Post &rarr;</a>
@@ -331,26 +292,6 @@
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#前端开发" title="前端开发" rel="3">
-                                    前端开发
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#JavaScript" title="JavaScript" rel="3">
-                                    JavaScript
-                                </a>
-                            
-        				
-                            
         				
                             
         				
@@ -466,7 +407,7 @@
                     <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
                     
                     <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/https://www.zhihu.com/people/soFlyMan">
+                        <a target="_blank" href="https://www.zhihu.com/people/people/sofly-man">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa  fa-stack-1x fa-inverse">知</i>
@@ -476,7 +417,7 @@
                     
                     
                     <li>
-                        <a target="_blank" href="http://weibo.com/http://weibo.com/soFlyMan">
+                        <a target="_blank" href="http://weibo.com/soFlyMan">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
@@ -487,18 +428,9 @@
 
 
                     
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/https://github.com/soFlyMan">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
                     
                     <li>
-                        <a target="_blank" href="https://github.com/https://github.com/soFlyMan">
+                        <a target="_blank" href="https://github.com/soFlyMan">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>

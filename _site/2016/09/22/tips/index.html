@@ -184,6 +184,48 @@
 
 <p>你需要提供至少字体大小和字体，否则将会出现语法错误，导致invalid property value。</p>
 
+<h4 id="sublime">如何给文件夹或者文件添加右键sublime打开选项</h4>
+
+<p>把以下代码，复制到SublimeText3的安装目录，然后重命名为：sublime_addright.reg，然后双击就可以了。</p>
+
+<p>PS:<strong>需要把里边的Sublime的安装目录，替换成实际的Sublime安装目录</strong>。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>PS:需要把里边的Sublime的安装目录，替换成实际的Sublime安装目录。
+
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3]
+@="用 SublimeText3 打开"
+"Icon"="C:\\Program Files\\Sublime Text 3\\sublime_text.exe,0"
+
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3\command]
+@="C:\\Program Files\\Sublime Text 3\\sublime_text.exe %1"
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
+@="用 SublimeText3 打开"
+"Icon"="C:\\Program Files\\Sublime Text 3\\sublime_text.exe,0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3\command]
+@="C:\\Program Files\\Sublime Text 3\\sublime_text.exe %1"
+
+</code></pre>
+</div>
+
+<p><strong>删除右键菜单的脚本</strong>,然后重命名为：sublime_delright.reg，运行一下就可以了。</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Windows Registry Editor Version 5.00
+[-HKEY_CLASSES_ROOT\*\shell\SublimeText3]
+[-HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
+
+</code></pre>
+</div>
+
+<h3 id="section">有哪些好的习惯程序员值得拥有？</h3>
+
+<blockquote>
+  <p>1.使用快捷键。
+2.写博客。
+3.写脚本替换重复操作。</p>
+</blockquote>
 
 
                 <hr>
@@ -262,26 +304,6 @@ font: font-style f... | soFly's Blog " >
                     <hr class="hidden-sm hidden-xs">
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
-        				
-                            
-        				
-                            
-        				
-                            
-        				
-                            
-                				<a href="/tags/#前端开发" title="前端开发" rel="3">
-                                    前端开发
-                                </a>
-                            
-        				
-                            
-                				<a href="/tags/#JavaScript" title="JavaScript" rel="3">
-                                    JavaScript
-                                </a>
-                            
-        				
-                            
         				
                             
         				
@@ -397,7 +419,7 @@ font: font-style f... | soFly's Blog " >
                     <!-- add Weibo, Zhihu by Hux, add target = "_blank" to <a> by Hux -->
                     
                     <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/https://www.zhihu.com/people/soFlyMan">
+                        <a target="_blank" href="https://www.zhihu.com/people/people/sofly-man">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa  fa-stack-1x fa-inverse">知</i>
@@ -407,7 +429,7 @@ font: font-style f... | soFly's Blog " >
                     
                     
                     <li>
-                        <a target="_blank" href="http://weibo.com/http://weibo.com/soFlyMan">
+                        <a target="_blank" href="http://weibo.com/soFlyMan">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
@@ -418,18 +440,9 @@ font: font-style f... | soFly's Blog " >
 
 
                     
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/https://github.com/soFlyMan">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
                     
                     <li>
-                        <a target="_blank" href="https://github.com/https://github.com/soFlyMan">
+                        <a target="_blank" href="https://github.com/soFlyMan">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
