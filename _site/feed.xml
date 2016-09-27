@@ -5,8 +5,8 @@
     <description>这是我的博客。</description>
     <link>http://soflyman.github.io/</link>
     <atom:link href="http://soflyman.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 26 Sep 2016 19:37:27 +0800</pubDate>
-    <lastBuildDate>Mon, 26 Sep 2016 19:37:27 +0800</lastBuildDate>
+    <pubDate>Tue, 27 Sep 2016 09:00:35 +0800</pubDate>
+    <lastBuildDate>Tue, 27 Sep 2016 09:00:35 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -94,6 +94,41 @@ Windows Registry Editor Version 5.00
         <guid isPermaLink="true">http://soflyman.github.io/2016/09/22/defination/</guid>
         
         <category>tips</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>jekyll</title>
+        <description>&lt;h1 id=&quot;jekyll-&quot;&gt;jekyll 踩坑之路&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2016-8-01 jekyll+github pages 开始搭建个人博客&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2016-9-26 决定学习git命令&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;刚开始搭建的时候一直基本上所有的东西都不理解，包括所谓的目录结构。没有选择hexo是因为我最先看到的教程都是有关于jekyll的，单是安装就开始踩坑，费了很大的劲才发现是版本问题，最新版的jekyll会出问题。不懂目录结构，不懂jekyll生成静态网页的配置，所以想要改变模版的结构很吃力。但我的目标是想要改变整个blog的风格的，居然连最基本的为何要使用模版引擎都无法理解，最后也只能不了了之了。&lt;/p&gt;
+
+&lt;p&gt;虽然期间有很长一段时间都想过要尝试着去做些改变，但是一直到今天才发现，想要自定义模版需要用到jekyll中的liquid语言。现在目录结构已经感觉很清晰了，使用模版引擎的原因也大概了解了，又遇到了由于github出于安全性考虑而禁用jekyll插件的问题，&lt;em&gt;Jekyll 插件在 GitHub Pages 中不能使用，因为 GitHub Pages 的编译使用 –safe 参数；但可以在本地编译后同步至 GitHub 来取代 GitHub 的自动编译。&lt;/em&gt;此刻我的内心是崩溃的。为什么我当初没有选择hexo？&lt;/p&gt;
+
+&lt;p&gt;这都无所谓，插件有问题别人能用就一定有办法解决。然后，把目标转移到了github上。我不会命令行，好吧，在远端仓库创建分支。然后呢？然后没有然后了……别人的解决方法是用git命令创建分支，后面就看不懂了……&lt;/p&gt;
+
+&lt;p&gt;这一刻，吐血的心并没有阻止我放弃jekyll去选择甚至上更漂亮的hexo。&lt;/p&gt;
+
+&lt;p&gt;我决定，学习git命令！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://oe43hirdi.bkt.clouddn.com/wdnx.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;未完待续……&lt;/h3&gt;
+</description>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/14/jekyll/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/14/jekyll/</guid>
+        
+        <category>learn</category>
         
         
       </item>

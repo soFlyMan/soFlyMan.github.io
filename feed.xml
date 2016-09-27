@@ -1,30 +1,233 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>soFly&#39;s Blog</title>
+    <description>这是我的博客。</description>
+    <link>http://soflyman.github.io/</link>
+    <atom:link href="http://soflyman.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 27 Sep 2016 09:00:35 +0800</pubDate>
+    <lastBuildDate>Tue, 27 Sep 2016 09:00:35 +0800</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>tips</title>
+        <description>&lt;h3 id=&quot;tips&quot;&gt;关于写代码时遇到的小tips&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;FONT SHORTHAND&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;font syntax语法&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;body {&lt;/p&gt;
+
+&lt;p&gt;font: font-style font-variant font-weight font-size/line-height font-family;&lt;/p&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;You need to supply at least font-size and font-family for the shorthand to work, otherwise it’ll just be a syntax error and do nothing.&lt;/p&gt;
+
+&lt;p&gt;你需要提供至少字体大小和字体，否则将会出现语法错误，导致invalid property value。&lt;/p&gt;
+
+&lt;h4 id=&quot;sublime&quot;&gt;如何给文件夹或者文件添加右键sublime打开选项&lt;/h4&gt;
+
+&lt;p&gt;把以下代码，复制到SublimeText3的安装目录，然后重命名为：sublime_addright.reg，然后双击就可以了。&lt;/p&gt;
+
+&lt;p&gt;PS:&lt;strong&gt;需要把里边的Sublime的安装目录，替换成实际的Sublime安装目录&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;PS:需要把里边的Sublime的安装目录，替换成实际的Sublime安装目录。
+
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3]
+@=&quot;用 SublimeText3 打开&quot;
+&quot;Icon&quot;=&quot;C:\\Program Files\\Sublime Text 3\\sublime_text.exe,0&quot;
+
+[HKEY_CLASSES_ROOT\*\shell\SublimeText3\command]
+@=&quot;C:\\Program Files\\Sublime Text 3\\sublime_text.exe %1&quot;
+
+
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
+@=&quot;用 SublimeText3 打开&quot;
+&quot;Icon&quot;=&quot;C:\\Program Files\\Sublime Text 3\\sublime_text.exe,0&quot;
+
+[HKEY_CLASSES_ROOT\Directory\shell\SublimeText3\command]
+@=&quot;C:\\Program Files\\Sublime Text 3\\sublime_text.exe %1&quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;删除右键菜单的脚本&lt;/strong&gt;,然后重命名为：sublime_delright.reg，运行一下就可以了。&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Windows Registry Editor Version 5.00
+[-HKEY_CLASSES_ROOT\*\shell\SublimeText3]
+[-HKEY_CLASSES_ROOT\Directory\shell\SublimeText3]
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;有哪些好的习惯程序员值得拥有？&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1.使用快捷键。
+2.写博客。
+3.写脚本替换重复操作。&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Thu, 22 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/22/tips/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/22/tips/</guid>
+        
+        <category>tips</category>
+        
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>名词解释</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;一些名词的解释及作用&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;模版引擎&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;模板引擎（这里特指用于Web开发的模板引擎）是为了使用户界面与业务数据（内容）分离而产生的，它可以生成特定格式的文档，用于网站的模板引擎就会生成一个标准的HTML文档。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/22/defination/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/22/defination/</guid>
+        
+        <category>tips</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>jekyll</title>
+        <description>&lt;h1 id=&quot;jekyll-&quot;&gt;jekyll 踩坑之路&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2016-8-01 jekyll+github pages 开始搭建个人博客&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;2016-9-26 决定学习git命令&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;刚开始搭建的时候一直基本上所有的东西都不理解，包括所谓的目录结构。没有选择hexo是因为我最先看到的教程都是有关于jekyll的，单是安装就开始踩坑，费了很大的劲才发现是版本问题，最新版的jekyll会出问题。不懂目录结构，不懂jekyll生成静态网页的配置，所以想要改变模版的结构很吃力。但我的目标是想要改变整个blog的风格的，居然连最基本的为何要使用模版引擎都无法理解，最后也只能不了了之了。&lt;/p&gt;
+
+&lt;p&gt;虽然期间有很长一段时间都想过要尝试着去做些改变，但是一直到今天才发现，想要自定义模版需要用到jekyll中的liquid语言。现在目录结构已经感觉很清晰了，使用模版引擎的原因也大概了解了，又遇到了由于github出于安全性考虑而禁用jekyll插件的问题，&lt;em&gt;Jekyll 插件在 GitHub Pages 中不能使用，因为 GitHub Pages 的编译使用 –safe 参数；但可以在本地编译后同步至 GitHub 来取代 GitHub 的自动编译。&lt;/em&gt;此刻我的内心是崩溃的。为什么我当初没有选择hexo？&lt;/p&gt;
+
+&lt;p&gt;这都无所谓，插件有问题别人能用就一定有办法解决。然后，把目标转移到了github上。我不会命令行，好吧，在远端仓库创建分支。然后呢？然后没有然后了……别人的解决方法是用git命令创建分支，后面就看不懂了……&lt;/p&gt;
+
+&lt;p&gt;这一刻，吐血的心并没有阻止我放弃jekyll去选择甚至上更漂亮的hexo。&lt;/p&gt;
+
+&lt;p&gt;我决定，学习git命令！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://oe43hirdi.bkt.clouddn.com/wdnx.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;未完待续……&lt;/h3&gt;
+</description>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/14/jekyll/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/14/jekyll/</guid>
+        
+        <category>learn</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>目标</title>
+        <description>&lt;p&gt;我的目标是走技术领域的，很坚定。而且我也肯定，未来的大部分时间里，我都会专注于前端开发。虽然现在的我还很菜。虽然菜是原罪。但是对我而言，肯定不会出现从门到放弃的境况。我还需要点时间来沉淀自己。我对自己说过，能用时间解决的问题都不是问题。这个时间有不同的涵义。因为我对自己很清楚，很了解。唯一不了解的的是，我究竟能够走到什么样的程度。总是忍不住给自己找理由。不是找放弃的理由，不是给自己找坚持不下去的理由。而是荒废的这么多年。&lt;/p&gt;
+
+&lt;p&gt;现在的我，并不忌讳去说 抑郁的日子很容易荒废。
+我荒废了将近四年，最严重的时候连呼吸都很压抑，每一秒都很窒息。虽然现在，仍旧没好彻底。这种
+东西，应该很难痊愈的吧。&lt;/p&gt;
+
+&lt;p&gt;四年，不 是六年下来，唯一坚持下来的，就是 写了很多很多很多“没用”的字吧。每一段字都有着不可抗拒的情感在里面。&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 14 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/14/aim/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/14/aim/</guid>
+        
+        <category>life</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>繁花三千</title>
+        <description>&lt;h4 id=&quot;section&quot;&gt;正在搭建中……&lt;/h4&gt;
+</description>
+        <pubDate>Tue, 13 Sep 2016 00:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/09/13/fanhuasanqian/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/09/13/fanhuasanqian/</guid>
+        
+        <category>life</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>My First Blog</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;“ 感性者的理性思维之路. ”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;前言&lt;/h2&gt;
+
+&lt;p&gt;搭建我的第一个博客对我而言只是一个开始。
+因为很长一段时间都觉得自己一片空白。所以希望自己可以通过这样一种方式给自己开个头。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#build&quot;&gt;跳转 正文 &lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;现在依然是很多时候，脑子都是一片空白。&lt;/p&gt;
+
+&lt;p&gt;总觉得是少了点什么东西。可以说，是严重缺少了理性思维。程序员对我来说是个什么概念其实我都还没
+搞清楚。作为一名计算机的学生来说，越来越感觉这是一种耻辱。会的东西太少，要学习的东西有很多很多。
+很多时候都是不知道如何入手，或者在接触某个东西的前期，就因为各种原因，因为无法解决的困难而放弃。&lt;/p&gt;
+
+&lt;p&gt;而现在的我越来越以为，我需要一种爱折腾的精神。很多事情不能归咎到谁对谁错，走在路上的人不需要一直考虑来考虑去上路前的问题。况且，还没见到结果，这只不过是一个开始的过程。如果连开始都没有，恐怕早晚都会被埋在思绪的洪流当中……&lt;/p&gt;
+
+&lt;p&gt;过倦了那样的日子。&lt;/p&gt;
+
+&lt;p&gt;我还记得，我写过一篇关于小Y与敌法的故事。只不过时日太久，稿子也丢了，然后就不了了之了。说这些，其实我只是想告诉我自己，现在的我需要一些基础装，给自己一个FARM的机会。（没错，我就是一个纯正的 DOTA2的信仰玩家！）&lt;/p&gt;
+
+&lt;p&gt;下面，我会记录关于 我与我的BLOG的琐事，我一直把它当作我的一个契机……&lt;/p&gt;
+
+&lt;p id=&quot;build&quot;&gt;&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;正文&lt;/h2&gt;
+
+&lt;p&gt;确实，Github Pages+jekyll的方式搭建blog的过程很容易，但还是遇到了不少的问题。&lt;/p&gt;
+
+&lt;p&gt;我也是最近不久才接触Github的（说起来也真是惭愧……）。首先 我被这全英文的界面惊呆了好么。看着这些英文，我的大脑像装了浆糊一样。大学三年，英语已经荒废的不成样子，每次考试都是裸考，包括四六级。第一次裸考四级过了之后，其实当时我的想法是直接放弃六级的。只能说，以前的我脑子里装的全是水……
+接触Github还不到一个月，现在我才发现Github很强大，而且有很多很多好玩的东西。只是我现在的知识面太浅，很多东西都似懂非懂的样子。目前我的想法是靠自学
+成为一名前端。（好吧，其实也开始不久……）
+其实大一的时候还是接触过一点点的，只是当时就放弃了。想起来，我放弃的东西还真是多……所有，才会觉得自己变的一片空白。空白也好，空白的一张纸就更容易写上自己想写的
+东西。&lt;/p&gt;
+
+&lt;p&gt;说到这个blog的搭建，我翻了很多很多教程，发现搭建个人blog的方式有很多，因为我最先发现的是jekyll+github的教程，所以我就选择了这个方式。其他的方法还没来得及尝试……
+本以为会很容易搭建成功，后来……我就栽在了安装jekyll的过程当中。……我安装的是win64的最新版的jekyll，然后本地serve中报错，然后我不断的google，不断的重装，
+依旧是相同的error……后来终于发现是版本的问题，把最新版本uninstall之后，安装3.1.6版本就好了……嗯，我就是在别人github的英文交流中发现解决这个问题的方法的。
+虽然我到现在还不知道具体是什么原因……&lt;/p&gt;
+
+&lt;p&gt;然后，就不知羞耻的clon了别人的&lt;a href=&quot;https://github.com/Huxpro/huxpro.github.io&quot;&gt;模板&lt;/a&gt;，因为我的想法是可以在以后有进步的时候再来不断的修改，最后完全变成自己喜欢的样子！&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;后记&lt;/h2&gt;
+&lt;p&gt;关于这个blog的问题，我觉得它会成为我成长的记录本。现在的我是一个小白，不代表以后的我依旧是。路很艰难，很多东西说起来容易，做起来难，这些都是
+老生长谈。&lt;/p&gt;
+
+&lt;p&gt;我想说的是，只要我还在路上，对我而言，能用时间解决的问题，都不是问题。
+——soFly 后记于 2016.08&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Aug 2016 20:00:00 +0800</pubDate>
+        <link>http://soflyman.github.io/2016/08/01/my-first-blog/</link>
+        <guid isPermaLink="true">http://soflyman.github.io/2016/08/01/my-first-blog/</guid>
+        
+        <category>生活</category>
+        
+        
+      </item>
+    
   </channel>
 </rss>
