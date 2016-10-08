@@ -4,7 +4,7 @@ title:      "My First Blog"
 subtitle:   " \"DEAD END\""
 date:       2016-08-01 12:00:00
 author:     "soFly"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/about-us_04.jpg"
 tags:
     - 生活
 ---

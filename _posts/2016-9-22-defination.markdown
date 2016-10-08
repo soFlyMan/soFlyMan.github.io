@@ -4,7 +4,7 @@ title:      "名词解释"
 subtitle:   "有些东西至少需要了解。"
 date:       2016-09-22
 author:     "soFly"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/about-us_02.jpg"
 tags:
     - tips
    

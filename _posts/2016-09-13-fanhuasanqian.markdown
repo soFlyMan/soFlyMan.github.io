@@ -4,7 +4,7 @@ title:      "繁花三千"
 subtitle:   ""
 date:       2016-09-13
 author:     "soFly"
-header-img: "img/post-bg-unix-linux.jpg"
+header-img: "img/about-us_02.jpg"
 tags:
     - life
 ---
